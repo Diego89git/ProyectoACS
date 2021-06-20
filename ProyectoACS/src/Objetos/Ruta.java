@@ -13,14 +13,14 @@ import java.util.Date;
  */
 public class Ruta {
     int id;
-    String ciudadOrigen;
-    String ciudadDestino;
     Date fechaHoraSalida;
     Date fechaHoraLlegada;
     double precioPasaje;
     String estado;
     Bus bus;
     Usuario usuario;
+    Ciudad ciudadOrigen;
+    Ciudad ciudadDestino;
     
     
      public Ruta() {
@@ -28,16 +28,16 @@ public class Ruta {
         
     }
 
-    public Ruta(int id, String ciudadOrigen, String ciudadDestino, Date fechaHoraSalida, Date fechaHoraLlegada, double precioPasaje, String estado, Bus bus, Usuario usuario) {
+    public Ruta(int id, Date fechaHoraSalida, Date fechaHoraLlegada, double precioPasaje, String estado, Bus bus, Usuario usuario, Ciudad ciudadOrigen, Ciudad ciudadDestino) {
         this.id = id;
-        this.ciudadOrigen = ciudadOrigen;
-        this.ciudadDestino = ciudadDestino;
         this.fechaHoraSalida = fechaHoraSalida;
         this.fechaHoraLlegada = fechaHoraLlegada;
         this.precioPasaje = precioPasaje;
         this.estado = estado;
         this.bus = bus;
         this.usuario = usuario;
+        this.ciudadOrigen = ciudadOrigen;
+        this.ciudadDestino = ciudadDestino;
     }
 
     public int getId() {
@@ -46,22 +46,6 @@ public class Ruta {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getCiudadOrigen() {
-        return ciudadOrigen;
-    }
-
-    public void setCiudadOrigen(String ciudadOrigen) {
-        this.ciudadOrigen = ciudadOrigen;
-    }
-
-    public String getCiudadDestino() {
-        return ciudadDestino;
-    }
-
-    public void setCiudadDestino(String ciudadDestino) {
-        this.ciudadDestino = ciudadDestino;
     }
 
     public Date getFechaHoraSalida() {
@@ -111,7 +95,27 @@ public class Ruta {
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
+    public Ciudad getCiudadOrigen() {
+        return ciudadOrigen;
+    }
+
+    public void setCiudadOrigen(Ciudad ciudadOrigen) {
+        this.ciudadOrigen = ciudadOrigen;
+    }
+
+    public Ciudad getCiudadDestino() {
+        return ciudadDestino;
+    }
+
+    public void setCiudadDestino(Ciudad ciudadDestino) {
+        this.ciudadDestino = ciudadDestino;
+    }
+     
     
-    
-    
+     
+     
 }
+
+    
+    
