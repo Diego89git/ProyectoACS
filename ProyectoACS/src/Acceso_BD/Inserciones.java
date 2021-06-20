@@ -220,5 +220,28 @@ public class Inserciones {
         return false;
 
     }
+    public boolean insertarReserva(Reserva res) {
+        String sql="Insert into reserva values (null, ?,?,?,?)";
+        PreparedStatement pst;
+        
+        try {
+            pst = cn.prepareStatement(sql);
+            pst.setInt(1, res.getRuta().getId());
+            pst.setInt(2, res.getCliente().getId());
+            pst.setInt(3, res.getAsiento().getId());
+            pst.setString(4, res.getEstado());
+
+            int dev=pst.executeUpdate();
+           if (dev > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Inserciones.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+
+    }
     
 }
