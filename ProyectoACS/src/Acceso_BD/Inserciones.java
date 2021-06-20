@@ -116,7 +116,7 @@ public class Inserciones {
     }
     
     public boolean insertarUsuario(Usuario usu) {
-        String sql="Insert into rol values (null, ?,?,?,?,?,?,?)";
+        String sql="Insert into rol values (null, ?,?,?,?,?,?,?,?)";
         PreparedStatement pst;
         
         try {
