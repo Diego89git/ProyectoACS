@@ -28,6 +28,7 @@ public class Ruta {
         
     }
 
+
     public Ruta(int id, Date fechaHoraSalida, Date fechaHoraLlegada, double precioPasaje, String estado, Bus bus, Usuario usuario, Ciudad ciudadOrigen, Ciudad ciudadDestino) {
         this.id = id;
         this.fechaHoraSalida = fechaHoraSalida;
