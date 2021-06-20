@@ -13,8 +13,8 @@ import java.util.Date;
  */
 public class Ruta {
     int id;
-    String ciudadOrigen;
-    String ciudadDestino;
+    Ciudad ciudadOrigen;
+    Ciudad ciudadDestino;
     Date fechaHoraSalida;
     Date fechaHoraLlegada;
     double precioPasaje;
@@ -28,7 +28,7 @@ public class Ruta {
         
     }
 
-    public Ruta(int id, String ciudadOrigen, String ciudadDestino, Date fechaHoraSalida, Date fechaHoraLlegada, double precioPasaje, String estado, Bus bus, Usuario usuario) {
+    public Ruta(int id, Ciudad ciudadOrigen, Ciudad ciudadDestino, Date fechaHoraSalida, Date fechaHoraLlegada, double precioPasaje, String estado, Bus bus, Usuario usuario) {
         this.id = id;
         this.ciudadOrigen = ciudadOrigen;
         this.ciudadDestino = ciudadDestino;
@@ -48,19 +48,19 @@ public class Ruta {
         this.id = id;
     }
 
-    public String getCiudadOrigen() {
+    public Ciudad getCiudadOrigen() {
         return ciudadOrigen;
     }
 
-    public void setCiudadOrigen(String ciudadOrigen) {
+    public void setCiudadOrigen(Ciudad ciudadOrigen) {
         this.ciudadOrigen = ciudadOrigen;
     }
 
-    public String getCiudadDestino() {
+    public Ciudad getCiudadDestino() {
         return ciudadDestino;
     }
 
-    public void setCiudadDestino(String ciudadDestino) {
+    public void setCiudadDestino(Ciudad ciudadDestino) {
         this.ciudadDestino = ciudadDestino;
     }
 
