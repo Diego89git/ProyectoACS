@@ -14,18 +14,18 @@ public class Bus {
     String placa;
     int año;
     String marca;
-   Cooperativa coopetativa;
+   Cooperativa cooperativa;
 
    public Bus() {
  
     }
     
-    public Bus(int id, String placa, int año, String marca, Cooperativa coopetativa) {
+    public Bus(int id, String placa, int año, String marca, Cooperativa cooperativa) {
         this.id = id;
         this.placa = placa;
         this.año = año;
         this.marca = marca;
-        this.coopetativa = coopetativa;
+        this.cooperativa = cooperativa;
     }
 
     public int getId() {
@@ -60,14 +60,18 @@ public class Bus {
         this.marca = marca;
     }
 
-    public Cooperativa getCoopetativa() {
-        return coopetativa;
+    public Cooperativa getCooperativa() {
+        return cooperativa;
     }
 
-    public void setCoopetativa(Cooperativa coopetativa) {
-        this.coopetativa = coopetativa;
+    public void setCooperativa(Cooperativa cooperativa) {
+        this.cooperativa = cooperativa;
     }
    
-    
+    @Override
+    public String toString(){
+        
+        return this.placa;
+    }
     
 }

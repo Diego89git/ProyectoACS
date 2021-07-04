@@ -58,6 +58,10 @@ public class Asiento {
     public void setBus(Bus bus) {
         this.bus = bus;
     }
-    
+  @Override
+    public String toString(){
+        
+        return this.numero;
+    }  
     
 }

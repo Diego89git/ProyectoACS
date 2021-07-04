@@ -38,7 +38,11 @@ public class Rol {
         this.descripcion = descripcion;
     }
     
-    
+    @Override
+    public String toString(){
+        
+        return this.descripcion;
+    }
     
     
     

@@ -62,7 +62,7 @@ public class Consultas {
                 bus.setPlaca(datos.getString(2));
                 bus.setAño(datos.getInt(3));
                 bus.setMarca(datos.getString(4));   
-                bus.setCoopetativa(new Consultas().consultarCooperativa(datos.getInt(5)));
+                bus.setCooperativa(new Consultas().consultarCooperativa(datos.getInt(5)));
                 
                 buss.add(bus);
             }
@@ -84,7 +84,7 @@ public class Consultas {
                 asi.setNumero(datos.getString(2));
                 asi.setUbicacion(datos.getString(3));
                 asi.setBus(new Consultas().consultarBus(datos.getInt(4)));
-                
+
                 asis.add(asi);
             }
         } catch (SQLException ex) {
@@ -267,7 +267,7 @@ public class Consultas {
                 bus.setPlaca(datos.getString(2));
                 bus.setAño(datos.getInt(3));
                 bus.setMarca(datos.getString(4));   
-                bus.setCoopetativa(new Consultas().consultarCooperativa(datos.getInt(5)));
+                bus.setCooperativa(new Consultas().consultarCooperativa(datos.getInt(5)));
                 
                 buss.add(bus);
             }
@@ -475,7 +475,7 @@ public class Consultas {
                 bus.setPlaca(dato.getString(2));
                 bus.setAño(dato.getInt(3));
                 bus.setMarca(dato.getString(4));   
-                bus.setCoopetativa(new Consultas().consultarCooperativa(dato.getInt(5)));
+                bus.setCooperativa(new Consultas().consultarCooperativa(dato.getInt(5)));
               
         } catch (SQLException ex) {
             Logger.getLogger(ConeccionMYSQL.class.getName()).log(Level.SEVERE, null, ex);
