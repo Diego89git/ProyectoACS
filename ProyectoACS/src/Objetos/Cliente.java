@@ -99,7 +99,11 @@ public class Cliente {
         this.contraseña = contraseña;
     }
     
-    
+    @Override
+    public String toString(){
+        
+        return this.cedula;
+    }
     
     
 }

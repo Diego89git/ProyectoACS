@@ -49,5 +49,9 @@ public Ciudad() {
         this.codigoPostal = codigoPostal;
     }
 
-    
+    @Override
+    public String toString(){
+        
+        return this.nombre;
+    }
 }
