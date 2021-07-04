@@ -118,8 +118,9 @@ public class Inserciones {
 
     public boolean insertarUsuario(Usuario usu) {
         String sql = "Insert into usuario values (null, ?,?,?,?,?,?,?,?)";
-        PreparedStatement pst;
-        try {
+=======
+              PreparedStatement pst;        try {
+
             pst = cn.prepareStatement(sql);
             pst.setString(1, usu.getCedula());
             pst.setString(2, usu.getNombre());
