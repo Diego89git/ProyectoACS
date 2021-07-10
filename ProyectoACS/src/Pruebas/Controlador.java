@@ -5,7 +5,7 @@
  */
 package Pruebas;
 
-import Acceso_BD.Inserciones;
+import Acceso_BD.*;
 import Objetos.*;
 import java.util.Date;
 import javax.swing.JComboBox;
@@ -224,4 +224,133 @@ public class Controlador {
         ins.insertarReserva(res);
 
     }
+    
+        public void eliminarRol(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.rolEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="rol";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Rol en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarUsuario(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.usuarioEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="usuario";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Usuario en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarCooperativa(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.cooperativaEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="cooperativa";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Cooperativa en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarBus(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.busEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="bus";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Bus en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarAsiento(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.asientoEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="asiento";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Asiento en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarCiudad(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.ciudadEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="ciudad";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Ciudad en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarRuta(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.rutaEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="ruta";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Ruta en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarCliente(int id){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.clienteEstaEnUso(id)){
+           Eliminaciones el= new Eliminaciones();
+            String tabla="cliente";
+            el.eliminarObjeto(tabla, id); 
+        } else{
+            System.out.println("Cliente en uso, imposible eliminar: Primero elimine dependencias");
+        }
+        
+    }
+    public void eliminarReserva(int id){
+        Eliminaciones el= new Eliminaciones();
+        String tabla="resreva";
+        el.eliminarObjeto(tabla, id);   
+    }
+    
+    public void actualizarRol(int id, String descripcion){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.rolEstaEnUso(id)){
+           Rol rol= new Rol();
+           rol.setId(id);
+           rol.setDescripcion(descripcion);
+           Ediciones ed= new Ediciones();
+            ed.actualizarRol(rol);
+        } else{
+            System.out.println("Rol en uso, imposible editar: Primero elimine dependencias");
+        }
+        
+    }
+    public void actualizarUsuario(int id, String cedula, String nombre, String apellido, String telefono, String correo, String direccion, String contraseña, Rol rol){
+        Verificaciones vr= new Verificaciones();
+        if(!vr.usuarioEstaEnUso(id)){
+            Usuario usu= new Usuario();
+            rol.setId(id);
+            usu.setCedula(cedula);
+            usu.setNombre(nombre);
+            usu.setApellido(apellido);
+            usu.setTelefono(telefono);
+            usu.setCorreo(correo);
+            usu.setDireccion(direccion);
+            usu.setContraseña(contraseña);
+            usu.setRol(rol);
+           Ediciones ed= new Ediciones();
+            ed.actualizarRol(rol);
+        } else{
+            System.out.println("Usuario en uso, imposible editar: Primero elimine dependencias");
+        }
+        
+    }
+
 }
