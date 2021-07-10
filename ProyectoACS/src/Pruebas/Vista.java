@@ -1257,12 +1257,8 @@ public class Vista extends javax.swing.JFrame {
         jPanel17.add(cbRtCO, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 140, -1, -1));
 
         jPanel17.add(cbRtCD, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 80, -1, -1));
-
-        dcRtFhs.setDateFormatString("dd-MMM-yyyy HH:mm");
-        jPanel17.add(dcRtFhs, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 120, -1));
-
-        dcRtFhl.setDateFormatString("dd-MMM-yyyy HH:mm");
-        jPanel17.add(dcRtFhl, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 83, -1));
+        jPanel17.add(dcRtFhs, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
+        jPanel17.add(dcRtFhl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
