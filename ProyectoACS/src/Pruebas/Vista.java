@@ -1312,7 +1312,7 @@ public class Vista extends javax.swing.JFrame {
 
     private void cbRolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbRolActionPerformed
         Controlador con = new Controlador();
-        con.crearRol(this.txRlDescripcion.getText());
+        //con.crearRol(this.txRlDescripcion.getText());
         cargarTablas();
         cargarComboBox();
     }//GEN-LAST:event_cbRolActionPerformed
