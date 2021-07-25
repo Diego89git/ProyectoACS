@@ -13,10 +13,6 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Mauricio
- */
 public class Consultas {
     ResultSet datos, dato;
     Statement st;

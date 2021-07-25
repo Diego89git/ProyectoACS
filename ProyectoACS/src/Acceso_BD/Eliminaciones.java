@@ -12,10 +12,6 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Mauricio
- */
 public class Eliminaciones {    
     ConeccionMYSQL cn = new ConeccionMYSQL();
     ResultSet datos;

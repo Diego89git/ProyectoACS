@@ -9,15 +9,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Mauricio
- */
+
 public class ConeccionMYSQL {
 
-    /**
-     * @param args the command line arguments
-     */
     String driver = "org.gjt.mm.mysql.Driver";
     String url = "jdbc:mysql://localhost/";
     String bd = "proyectomanejo";

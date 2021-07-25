@@ -12,10 +12,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import Objetos.*;
 
-/**
- *
- * @author Mauricio
- */
 public class Ediciones {
     ConeccionMYSQL cn;
     public Ediciones() {
