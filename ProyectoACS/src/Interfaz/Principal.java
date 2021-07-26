@@ -8,7 +8,6 @@ import Objetos.Rol;
 import Objetos.Usuario;
 import Pruebas.Controlador;
 
-
 import javax.swing.JOptionPane;
 
 public class Principal extends javax.swing.JFrame {
@@ -22,7 +21,7 @@ public class Principal extends javax.swing.JFrame {
         jPMenu2.setVisible(false);
         jPAgendar.setVisible(false);
         jPM1Rutasprecio.setVisible(false);
-      
+
         jPM1Horarios.setVisible(false);
         jPAsiento.setVisible(false);
         jPBus.setVisible(false);
@@ -43,7 +42,7 @@ public class Principal extends javax.swing.JFrame {
         jPMenu2.setVisible(true);
         jPAgendar.setVisible(false);
         jPM1Rutasprecio.setVisible(false);
-   
+
         jPM1Horarios.setVisible(false);
         jPAsiento.setVisible(false);
         jPBus.setVisible(false);
@@ -63,7 +62,7 @@ public class Principal extends javax.swing.JFrame {
         jPMenu2.setVisible(false);
         jPAgendar.setVisible(false);
         jPM1Rutasprecio.setVisible(false);
- 
+
         jPM1Horarios.setVisible(false);
         jPAsiento.setVisible(false);
         jPBus.setVisible(false);
@@ -83,7 +82,7 @@ public class Principal extends javax.swing.JFrame {
         jPMenu2.setVisible(false);
         jPAgendar.setVisible(false);
         jPM1Rutasprecio.setVisible(false);
-     
+
         jPM1Horarios.setVisible(false);
         jPAsiento.setVisible(false);
         jPBus.setVisible(false);
@@ -99,6 +98,28 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPSalir = new javax.swing.JPanel();
+        jlSalir = new javax.swing.JLabel();
+        jlMinimizar = new javax.swing.JLabel();
+        jPMenu1 = new javax.swing.JPanel();
+        jBM1rutas = new javax.swing.JButton();
+        jBM1horarios = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jPIngreso = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jtxtUser = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jtxtPass = new javax.swing.JPasswordField();
+        jBM1Registrar = new javax.swing.JButton();
+        JBIngresar = new javax.swing.JButton();
         jPMenu2 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -295,28 +316,6 @@ public class Principal extends javax.swing.JFrame {
         cbRtCD = new javax.swing.JComboBox<>();
         dcRtFhl = new com.toedter.calendar.JDateChooser();
         dcRtFhs = new com.toedter.calendar.JDateChooser();
-        jPSalir = new javax.swing.JPanel();
-        jlSalir = new javax.swing.JLabel();
-        jlMinimizar = new javax.swing.JLabel();
-        jPMenu1 = new javax.swing.JPanel();
-        jBM1rutas = new javax.swing.JButton();
-        jBM1horarios = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jSeparator3 = new javax.swing.JSeparator();
-        jPIngreso = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jtxtUser = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jtxtPass = new javax.swing.JPasswordField();
-        jBM1Registrar = new javax.swing.JButton();
-        JBIngresar = new javax.swing.JButton();
         JPMRegistro = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -394,6 +393,184 @@ public class Principal extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPSalir.setBackground(new java.awt.Color(255, 255, 255));
+        jPSalir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
+        jPSalir.setForeground(new java.awt.Color(255, 255, 255));
+        jPSalir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Multiply_32px.png"))); // NOI18N
+        jlSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlSalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlSalirMouseClicked(evt);
+            }
+        });
+        jPSalir.add(jlSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 30, 30));
+
+        jlMinimizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlMinimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Expand_Arrow_32px.png"))); // NOI18N
+        jlMinimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlMinimizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jlMinimizarMouseClicked(evt);
+            }
+        });
+        jPSalir.add(jlMinimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 0, -1, 30));
+
+        getContentPane().add(jPSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 40));
+
+        jPMenu1.setBackground(new java.awt.Color(255, 255, 255));
+        jPMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
+        jPMenu1.setForeground(new java.awt.Color(255, 255, 255));
+        jPMenu1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jBM1rutas.setBackground(new java.awt.Color(238, 111, 82));
+        jBM1rutas.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
+        jBM1rutas.setForeground(new java.awt.Color(238, 111, 82));
+        jBM1rutas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Layers_icon-icons.com_74900.png"))); // NOI18N
+        jBM1rutas.setText("RUTAS y PRECIOS");
+        jBM1rutas.setBorder(null);
+        jBM1rutas.setBorderPainted(false);
+        jBM1rutas.setContentAreaFilled(false);
+        jBM1rutas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBM1rutasActionPerformed(evt);
+            }
+        });
+        jPMenu1.add(jBM1rutas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 240, -1));
+
+        jBM1horarios.setBackground(new java.awt.Color(238, 111, 82));
+        jBM1horarios.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
+        jBM1horarios.setForeground(new java.awt.Color(238, 111, 82));
+        jBM1horarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Schedule_36724.png"))); // NOI18N
+        jBM1horarios.setText("HORARIOS");
+        jBM1horarios.setBorder(null);
+        jBM1horarios.setBorderPainted(false);
+        jBM1horarios.setContentAreaFilled(false);
+        jBM1horarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBM1horariosActionPerformed(evt);
+            }
+        });
+        jPMenu1.add(jBM1horarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 200, 140));
+
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/handshake_icon_144618.png"))); // NOI18N
+        jPMenu1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 100, 100));
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("BIENVENIDO");
+        jPMenu1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 150, 90));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel17.setText("VER:");
+        jPMenu1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 50, 40));
+
+        jSeparator3.setBackground(new java.awt.Color(238, 111, 82));
+        jSeparator3.setForeground(new java.awt.Color(238, 111, 82));
+        jPMenu1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 750, 10));
+
+        getContentPane().add(jPMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 740, 520));
+
+        jPIngreso.setBackground(new java.awt.Color(255, 255, 255));
+        jPIngreso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
+        jPIngreso.setForeground(new java.awt.Color(255, 255, 255));
+        jPIngreso.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setBackground(new java.awt.Color(238, 111, 82));
+        jLabel1.setFont(new java.awt.Font("Candara", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(238, 111, 82));
+        jLabel1.setText("CONTRASEÑA:");
+        jPIngreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
+
+        jLabel2.setBackground(new java.awt.Color(238, 111, 82));
+        jLabel2.setFont(new java.awt.Font("Candara", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(238, 111, 82));
+        jLabel2.setText("USUARIO:");
+        jPIngreso.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_User_96px_2.png"))); // NOI18N
+        jPIngreso.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 110, 120));
+
+        jtxtUser.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jtxtUser.setForeground(new java.awt.Color(153, 153, 153));
+        jtxtUser.setText("Ingrese su usuario.");
+        jtxtUser.setBorder(null);
+        jtxtUser.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtxtUserMouseClicked(evt);
+            }
+        });
+        jtxtUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtUserActionPerformed(evt);
+            }
+        });
+        jPIngreso.add(jtxtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 160, 30));
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+        jPIngreso.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 210, 30));
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jPIngreso.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 200, 30));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_customer_32px_1.png"))); // NOI18N
+        jPIngreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Key_32px.png"))); // NOI18N
+        jPIngreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
+
+        jtxtPass.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jtxtPass.setForeground(new java.awt.Color(153, 153, 153));
+        jtxtPass.setText("jPassword53,1d2");
+        jtxtPass.setBorder(null);
+        jtxtPass.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtxtPassMouseClicked(evt);
+            }
+        });
+        jtxtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtPassActionPerformed(evt);
+            }
+        });
+        jPIngreso.add(jtxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 160, 30));
+
+        jBM1Registrar.setBackground(new java.awt.Color(238, 111, 82));
+        jBM1Registrar.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jBM1Registrar.setForeground(new java.awt.Color(238, 111, 82));
+        jBM1Registrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/REEGI.png"))); // NOI18N
+        jBM1Registrar.setText("REGISTARASE");
+        jBM1Registrar.setBorder(null);
+        jBM1Registrar.setBorderPainted(false);
+        jBM1Registrar.setContentAreaFilled(false);
+        jBM1Registrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBM1RegistrarActionPerformed(evt);
+            }
+        });
+        jPIngreso.add(jBM1Registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 140, 50));
+
+        JBIngresar.setBackground(new java.awt.Color(255, 255, 255));
+        JBIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Enter_ON.png"))); // NOI18N
+        JBIngresar.setBorder(null);
+        JBIngresar.setBorderPainted(false);
+        JBIngresar.setContentAreaFilled(false);
+        JBIngresar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Enter_ON.png"))); // NOI18N
+        JBIngresar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Enter_ON.png"))); // NOI18N
+        JBIngresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBIngresarActionPerformed(evt);
+            }
+        });
+        jPIngreso.add(JBIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 150, 50));
+
+        getContentPane().add(jPIngreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 290, 520));
+
         jPMenu2.setBackground(new java.awt.Color(255, 255, 255));
         jPMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
         jPMenu2.setForeground(new java.awt.Color(255, 255, 255));
@@ -413,7 +590,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton4);
-        jButton4.setBounds(430, 340, 169, 96);
+        jButton4.setBounds(430, 340, 169, 97);
 
         jButton5.setBackground(new java.awt.Color(255, 99, 71));
         jButton5.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -429,7 +606,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton5);
-        jButton5.setBounds(760, 360, 145, 96);
+        jButton5.setBounds(760, 360, 145, 97);
 
         jButton3.setBackground(new java.awt.Color(255, 99, 71));
         jButton3.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -445,7 +622,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton3);
-        jButton3.setBounds(70, 80, 220, 96);
+        jButton3.setBounds(70, 80, 220, 97);
 
         jButton9.setBackground(new java.awt.Color(255, 99, 71));
         jButton9.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -487,7 +664,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jBagendar);
-        jBagendar.setBounds(70, 200, 220, 96);
+        jBagendar.setBounds(70, 200, 220, 97);
 
         jButton6.setBackground(new java.awt.Color(255, 99, 71));
         jButton6.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -503,7 +680,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton6);
-        jButton6.setBounds(420, 210, 200, 96);
+        jButton6.setBounds(420, 210, 200, 97);
 
         JBM2Salir.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
         JBM2Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Exit_41038.png"))); // NOI18N
@@ -516,7 +693,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(JBM2Salir);
-        JBM2Salir.setBounds(20, 460, 106, 50);
+        JBM2Salir.setBounds(20, 460, 111, 50);
 
         jButton7.setBackground(new java.awt.Color(255, 99, 71));
         jButton7.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -532,7 +709,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton7);
-        jButton7.setBounds(90, 330, 169, 96);
+        jButton7.setBounds(90, 330, 169, 97);
 
         jButton10.setBackground(new java.awt.Color(255, 99, 71));
         jButton10.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -548,7 +725,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton10);
-        jButton10.setBounds(430, 80, 161, 96);
+        jButton10.setBounds(430, 80, 161, 97);
 
         jButton13.setBackground(new java.awt.Color(255, 99, 71));
         jButton13.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
@@ -564,7 +741,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPMenu2.add(jButton13);
-        jButton13.setBounds(740, 80, 169, 96);
+        jButton13.setBounds(740, 80, 169, 97);
 
         jLabel18.setBackground(new java.awt.Color(255, 99, 71));
         jLabel18.setFont(new java.awt.Font("Cooper Black", 0, 14)); // NOI18N
@@ -1350,184 +1527,6 @@ public class Principal extends javax.swing.JFrame {
 
         getContentPane().add(jPRuta, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1030, 520));
 
-        jPSalir.setBackground(new java.awt.Color(255, 255, 255));
-        jPSalir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
-        jPSalir.setForeground(new java.awt.Color(255, 255, 255));
-        jPSalir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jlSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Multiply_32px.png"))); // NOI18N
-        jlSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jlSalir.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlSalirMouseClicked(evt);
-            }
-        });
-        jPSalir.add(jlSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 0, 30, 30));
-
-        jlMinimizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlMinimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Expand_Arrow_32px.png"))); // NOI18N
-        jlMinimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jlMinimizar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jlMinimizarMouseClicked(evt);
-            }
-        });
-        jPSalir.add(jlMinimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 0, -1, 30));
-
-        getContentPane().add(jPSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 40));
-
-        jPMenu1.setBackground(new java.awt.Color(255, 255, 255));
-        jPMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
-        jPMenu1.setForeground(new java.awt.Color(255, 255, 255));
-        jPMenu1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jBM1rutas.setBackground(new java.awt.Color(238, 111, 82));
-        jBM1rutas.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
-        jBM1rutas.setForeground(new java.awt.Color(238, 111, 82));
-        jBM1rutas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Layers_icon-icons.com_74900.png"))); // NOI18N
-        jBM1rutas.setText("RUTAS y PRECIOS");
-        jBM1rutas.setBorder(null);
-        jBM1rutas.setBorderPainted(false);
-        jBM1rutas.setContentAreaFilled(false);
-        jBM1rutas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBM1rutasActionPerformed(evt);
-            }
-        });
-        jPMenu1.add(jBM1rutas, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 240, -1));
-
-        jBM1horarios.setBackground(new java.awt.Color(238, 111, 82));
-        jBM1horarios.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
-        jBM1horarios.setForeground(new java.awt.Color(238, 111, 82));
-        jBM1horarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Schedule_36724.png"))); // NOI18N
-        jBM1horarios.setText("HORARIOS");
-        jBM1horarios.setBorder(null);
-        jBM1horarios.setBorderPainted(false);
-        jBM1horarios.setContentAreaFilled(false);
-        jBM1horarios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBM1horariosActionPerformed(evt);
-            }
-        });
-        jPMenu1.add(jBM1horarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 330, 200, 140));
-
-        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/handshake_icon_144618.png"))); // NOI18N
-        jPMenu1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 100, 100));
-
-        jLabel16.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("BIENVENIDO");
-        jPMenu1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 150, 90));
-
-        jLabel17.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel17.setText("VER:");
-        jPMenu1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 50, 40));
-
-        jSeparator3.setBackground(new java.awt.Color(238, 111, 82));
-        jSeparator3.setForeground(new java.awt.Color(238, 111, 82));
-        jPMenu1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 750, 10));
-
-        getContentPane().add(jPMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 740, 520));
-
-        jPIngreso.setBackground(new java.awt.Color(255, 255, 255));
-        jPIngreso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
-        jPIngreso.setForeground(new java.awt.Color(255, 255, 255));
-        jPIngreso.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setBackground(new java.awt.Color(238, 111, 82));
-        jLabel1.setFont(new java.awt.Font("Candara", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(238, 111, 82));
-        jLabel1.setText("CONTRASEÑA:");
-        jPIngreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
-
-        jLabel2.setBackground(new java.awt.Color(238, 111, 82));
-        jLabel2.setFont(new java.awt.Font("Candara", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(238, 111, 82));
-        jLabel2.setText("USUARIO:");
-        jPIngreso.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
-
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_User_96px_2.png"))); // NOI18N
-        jPIngreso.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 110, 120));
-
-        jtxtUser.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jtxtUser.setForeground(new java.awt.Color(153, 153, 153));
-        jtxtUser.setText("Ingrese su usuario.");
-        jtxtUser.setBorder(null);
-        jtxtUser.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jtxtUserMouseClicked(evt);
-            }
-        });
-        jtxtUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtUserActionPerformed(evt);
-            }
-        });
-        jPIngreso.add(jtxtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 160, 30));
-
-        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        jPIngreso.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 210, 30));
-
-        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        jPIngreso.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 200, 30));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_customer_32px_1.png"))); // NOI18N
-        jPIngreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Key_32px.png"))); // NOI18N
-        jPIngreso.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
-
-        jtxtPass.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jtxtPass.setForeground(new java.awt.Color(153, 153, 153));
-        jtxtPass.setText("jPassword53,1d2");
-        jtxtPass.setBorder(null);
-        jtxtPass.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jtxtPassMouseClicked(evt);
-            }
-        });
-        jtxtPass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtPassActionPerformed(evt);
-            }
-        });
-        jPIngreso.add(jtxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 160, 30));
-
-        jBM1Registrar.setBackground(new java.awt.Color(238, 111, 82));
-        jBM1Registrar.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jBM1Registrar.setForeground(new java.awt.Color(238, 111, 82));
-        jBM1Registrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/REEGI.png"))); // NOI18N
-        jBM1Registrar.setText("REGISTARASE");
-        jBM1Registrar.setBorder(null);
-        jBM1Registrar.setBorderPainted(false);
-        jBM1Registrar.setContentAreaFilled(false);
-        jBM1Registrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBM1RegistrarActionPerformed(evt);
-            }
-        });
-        jPIngreso.add(jBM1Registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 140, 50));
-
-        JBIngresar.setBackground(new java.awt.Color(255, 255, 255));
-        JBIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Enter_ON.png"))); // NOI18N
-        JBIngresar.setBorder(null);
-        JBIngresar.setBorderPainted(false);
-        JBIngresar.setContentAreaFilled(false);
-        JBIngresar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Enter_ON.png"))); // NOI18N
-        JBIngresar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Enter_ON.png"))); // NOI18N
-        JBIngresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBIngresarActionPerformed(evt);
-            }
-        });
-        jPIngreso.add(JBIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 150, 50));
-
-        getContentPane().add(jPIngreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 290, 520));
-
         JPMRegistro.setBackground(new java.awt.Color(255, 255, 255));
         JPMRegistro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
         JPMRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1911,7 +1910,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jtxtUserActionPerformed
 
     private void jtxtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtPassActionPerformed
-       
+
     }//GEN-LAST:event_jtxtPassActionPerformed
 
     private void jlMinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlMinimizarMouseClicked
@@ -1932,18 +1931,18 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jBagendarActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       blanco();
+        blanco();
         jPCliente.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-       blanco();
-       jPBus.setVisible(true);
+        blanco();
+        jPBus.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-       blanco();
-       jPRuta.setVisible(true);
+        blanco();
+        jPRuta.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -1952,8 +1951,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-       blanco();
-       jPRol.setVisible(true);
+        blanco();
+        jPRol.setVisible(true);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jBagendarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBagendarMouseMoved
@@ -2013,11 +2012,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jbSalirActionPerformed
 
     private void JBM2SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBM2SalirActionPerformed
-     inicio();
+        inicio();
     }//GEN-LAST:event_JBM2SalirActionPerformed
 
     private void jBM1rutasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBM1rutasActionPerformed
-       blanco();
+        blanco();
         jPM1Rutasprecio.setVisible(true);
         jPIngreso.setVisible(true);
         jPSalir.setVisible(true);
@@ -2025,7 +2024,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jBM1rutasActionPerformed
 
     private void jBM1horariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBM1horariosActionPerformed
-     blanco();
+        blanco();
         jPM1Horarios.setVisible(true);
         jPIngreso.setVisible(true);
         jPSalir.setVisible(true);
@@ -2034,19 +2033,18 @@ public class Principal extends javax.swing.JFrame {
     private void JBIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBIngresarActionPerformed
         Controller control = new Controller();
         Boolean resp = control.login();
+        Boolean resp2 = control.pass();
         if (resp == true) {
-            jPM1Rutasprecio.setVisible(false);
-            JPMRegistro.setVisible(false);
-            jPMenu2.setVisible(true);
-            jPAgendar.setVisible(false);
-        
-            jPM1Horarios.setVisible(false);
-            jPMenu1.setVisible(false);
-            jPIngreso.setVisible(false);
-            jPSalir.setVisible(true);
-            JOptionPane.showMessageDialog(null, "Bienvenido");
+            if (resp2 == true) {
+                blanco();
+                jPMenu2.setVisible(true);
+                jPSalir.setVisible(true);
+                JOptionPane.showMessageDialog(null, "Bienvenido");
+            } else {
+                JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
+            }
         } else {
-            JOptionPane.showMessageDialog(null, "Datos incorrectos");
+            JOptionPane.showMessageDialog(null, "Usuario incorrecto");
         }
     }//GEN-LAST:event_JBIngresarActionPerformed
 
@@ -2056,13 +2054,13 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-       blanco();
+        blanco();
         jPUsuario.setVisible(true);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-      blanco();
-      jPCiudad.setVisible(true);
+        blanco();
+        jPCiudad.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jBhregresdarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBhregresdarActionPerformed
@@ -2124,12 +2122,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btCopGActionPerformed
 
     private void btCopDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCopDActionPerformed
-    
+
     }//GEN-LAST:event_btCopDActionPerformed
 
     private void btAsGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAsGActionPerformed
 
-     
 
     }//GEN-LAST:event_btAsGActionPerformed
 
@@ -2139,11 +2136,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btCiuGActionPerformed
 
     private void btRlUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlUActionPerformed
-    
+
     }//GEN-LAST:event_btRlUActionPerformed
 
     private void btRlDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlDActionPerformed
-  
+
     }//GEN-LAST:event_btRlDActionPerformed
 
     private void btRlGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlGActionPerformed
@@ -2152,7 +2149,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btRlGActionPerformed
 
     private void btRlUPSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlUPSActionPerformed
- 
+
     }//GEN-LAST:event_btRlUPSActionPerformed
 
     private void btBusGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBusGActionPerformed
@@ -2165,11 +2162,11 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btBusUActionPerformed
 
     private void btBusDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBusDActionPerformed
- 
+
     }//GEN-LAST:event_btBusDActionPerformed
 
     private void btUsDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btUsDActionPerformed
- 
+
     }//GEN-LAST:event_btUsDActionPerformed
 
     private void btRlUPS2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlUPS2ActionPerformed
@@ -2204,7 +2201,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_JTANumeroActionPerformed
 
     public static void main(String args[]) {
-      
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Windows".equals(info.getName())) {
@@ -2223,7 +2220,6 @@ public class Principal extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Principal().setVisible(true);

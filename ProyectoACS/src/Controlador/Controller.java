@@ -16,8 +16,7 @@ import Objetos.Cooperativa;
 import Objetos.Rol;
 import Objetos.Ruta;
 import Objetos.Usuario;
-import java.util.List;
-import java.util.Set;
+
 
 /**
  *
@@ -29,7 +28,7 @@ public class Controller {
     Inserciones inser = new Inserciones();
 
     public boolean login() {
-//        Principal plog= new Principal();
+
         try {
             int user;
             user = Integer.parseInt(Principal.jtxtUser.getText());
@@ -47,8 +46,27 @@ public class Controller {
         }
         return false;
     }
+     public boolean pass() {
+    
+        try {
+            int user;
+            user = Integer.parseInt(Principal.jtxtUser.getText());
+            String pass = Principal.jtxtPass.getText();
+            Usuario us1 = cons.consultarUsuario(user);
+            Cliente cli = cons.consultarCliente(user);
+            if (us1 != null && us1.getContraseña()==pass) {
+                return true;
+            } else if (cli != null && cli.getContraseña()==pass) {
+                return true;
+            }
 
-    public List<Cliente> registroCliente() {
+        } catch (Exception e) {
+            return false;
+        }   
+    return false;
+    }
+
+    public Cliente registroCliente() {
         Cliente cliente = new Cliente();
         String cedula = Principal.JTRCedula.getText();
         cliente.setCedula(cedula);
@@ -65,9 +83,10 @@ public class Controller {
         String contraseña = Principal.JTRContraseña.getText();
         cliente.setContraseña(contraseña);
         inser.insertarCliente(cliente);
+        return cliente;
     }
 
-    public List<Usuario> registroUsuario() {
+    public Usuario registroUsuario() {
         Usuario usuario = new Usuario();
         String cedula = Principal.JTUCedula.getText();
         usuario.setCedula(cedula);
@@ -84,18 +103,20 @@ public class Controller {
         String contraseña = Principal.JTUContraseña.getText();
         usuario.setContraseña(contraseña);
         inser.insertarUsuario(usuario);
+        return usuario;
     }
 
-    public List<Ciudad> registroCiudad() {
+    public Ciudad registroCiudad() {
         Ciudad ciudad = new Ciudad();
         String nombre = Principal.JTCNombre.getText();
         ciudad.setNombre(nombre);
         String codigoPostal = Principal.JTCCodPos.getText();
         ciudad.setCodigoPostal(codigoPostal);
         inser.insertarCiudad(ciudad);
+        return ciudad;
     }
 
-    public List<Cooperativa> registroCooperativa() {
+    public Cooperativa registroCooperativa() {
         Cooperativa coop = new Cooperativa();
         String nombre = Principal.TXCNombre.getText();
         coop.setNombre(nombre);
@@ -108,25 +129,29 @@ public class Controller {
         String correo = Principal.TXCCorreo.getText();
         coop.setCorreo(correo);
         inser.insertarCooperativa(coop);
+        return coop;
     }
 
-    public List<Rol> registroRol() {
+    public Rol registroRol() {
         Rol rol = new Rol();
         String descripcion = Principal.TXRDescripcion.getText();
         rol.setDescripcion(descripcion);
         inser.insertarRol(rol);
+        return rol;
     }
 
-    public List<Asiento> registroAsiento() {
+    public Asiento registroAsiento() {
         Asiento asiento = new Asiento();
         String numero = Principal.JTANumero.getText();
         asiento.setNumero(numero);
         String ubicacion = Principal.JTAUbicacion.getText();
         asiento.setUbicacion(ubicacion);
         inser.insertarAsiento(asiento);
+        return asiento;
+        
     }
 
-    public List<Bus> registroBus() {
+    public Bus registroBus() {
         Bus bus = new Bus();
         String placa = Principal.JTBPlaca.getText();
         bus.setPlaca(placa);
@@ -135,14 +160,16 @@ public class Controller {
         String marca = Principal.JTBMarca.getText();
         bus.setMarca(marca);
         inser.insertarBus(bus);
+        return bus;
     }
     
-    public List<Ruta> registroRuta(){
+    public Ruta registroRuta(){
         Ruta ruta = new Ruta();
         double precioPasaje = Double.parseDouble(Principal.TXJPrecio.getText());
         ruta.setPrecioPasaje(precioPasaje);
         String estado = Principal.TXJEstado.getText();
         ruta.setEstado(estado);
         inser.insertarRuta(ruta);
+        return  ruta;
     }
 }
