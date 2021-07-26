@@ -99,18 +99,30 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPMenu2 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jBagendar = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        JBM2Salir = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
         jPBus = new javax.swing.JPanel();
         JBM2Salir2 = new javax.swing.JButton();
         jLabel37 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
-        txBusPla = new javax.swing.JTextField();
+        JTBPlaca = new javax.swing.JTextField();
         txBusId = new javax.swing.JTextField();
         btBusG = new javax.swing.JButton();
-        txBusAño = new javax.swing.JTextField();
+        JTBMarca = new javax.swing.JTextField();
         jLabel72 = new javax.swing.JLabel();
-        txBusMar = new javax.swing.JTextField();
+        JTBAño = new javax.swing.JTextField();
         jLabel73 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -161,21 +173,21 @@ public class Principal extends javax.swing.JFrame {
         btRlUPN2 = new javax.swing.JButton();
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
-        txUsCed1 = new javax.swing.JTextField();
+        JTUCedula = new javax.swing.JTextField();
         txUsId1 = new javax.swing.JTextField();
         btUsG1 = new javax.swing.JButton();
         jLabel77 = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
-        txUsNom1 = new javax.swing.JTextField();
-        txUsApe1 = new javax.swing.JTextField();
-        txUsCor1 = new javax.swing.JTextField();
+        JTUNombre = new javax.swing.JTextField();
+        JTUApellido = new javax.swing.JTextField();
+        JTUCorreo = new javax.swing.JTextField();
         jLabel79 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
-        txUsTel1 = new javax.swing.JTextField();
-        txUsCon1 = new javax.swing.JTextField();
+        JTUTelefono = new javax.swing.JTextField();
+        JTUContraseña = new javax.swing.JTextField();
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
-        txUsDir1 = new javax.swing.JTextField();
+        JTUDireccion = new javax.swing.JTextField();
         jLabel83 = new javax.swing.JLabel();
         cbRol1 = new javax.swing.JComboBox<>();
         jPRol = new javax.swing.JPanel();
@@ -190,7 +202,7 @@ public class Principal extends javax.swing.JFrame {
         txRlS = new javax.swing.JTextField();
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
-        txRlDescripcion = new javax.swing.JTextField();
+        TXRDescripcion = new javax.swing.JTextField();
         txRlId = new javax.swing.JTextField();
         btRlG = new javax.swing.JButton();
         btRlUPS = new javax.swing.JButton();
@@ -207,18 +219,18 @@ public class Principal extends javax.swing.JFrame {
         txCiuS = new javax.swing.JTextField();
         jLabel65 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
-        txCiuNom = new javax.swing.JTextField();
+        JTCNombre = new javax.swing.JTextField();
         txCiuID = new javax.swing.JTextField();
         btCiuG = new javax.swing.JButton();
         jLabel67 = new javax.swing.JLabel();
-        txCiuCodPos = new javax.swing.JTextField();
+        JTCCodPos = new javax.swing.JTextField();
         jPAsiento = new javax.swing.JPanel();
         JBM2Salir3 = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
         Numero = new javax.swing.JLabel();
-        txAsNum = new javax.swing.JTextField();
+        JTANumero = new javax.swing.JTextField();
         txAsId = new javax.swing.JTextField();
         btAsG = new javax.swing.JButton();
         jPanel14 = new javax.swing.JPanel();
@@ -227,7 +239,7 @@ public class Principal extends javax.swing.JFrame {
         btAsU = new javax.swing.JButton();
         btAsD = new javax.swing.JButton();
         txAsS = new javax.swing.JTextField();
-        txAsUbi = new javax.swing.JTextField();
+        JTAUbicacion = new javax.swing.JTextField();
         Ubicacion = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
         cbAsBus = new javax.swing.JComboBox<>();
@@ -237,7 +249,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel46 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
-        txCopNom = new javax.swing.JTextField();
+        TXCNombre = new javax.swing.JTextField();
         txCopId = new javax.swing.JTextField();
         btCopG = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
@@ -246,13 +258,13 @@ public class Principal extends javax.swing.JFrame {
         btCopU = new javax.swing.JButton();
         btCopD = new javax.swing.JButton();
         txCopS = new javax.swing.JTextField();
-        txCopRuc = new javax.swing.JTextField();
+        TXCRuc = new javax.swing.JTextField();
         jLabel59 = new javax.swing.JLabel();
-        txCopDir = new javax.swing.JTextField();
+        TXCDireccion = new javax.swing.JTextField();
         jLabel60 = new javax.swing.JLabel();
-        txCopTel = new javax.swing.JTextField();
+        TXCTelefono = new javax.swing.JTextField();
         jLabel61 = new javax.swing.JLabel();
-        txCopCor = new javax.swing.JTextField();
+        TXCCorreo = new javax.swing.JTextField();
         jLabel62 = new javax.swing.JLabel();
         jPRuta = new javax.swing.JPanel();
         JBM2Salir1 = new javax.swing.JButton();
@@ -269,9 +281,9 @@ public class Principal extends javax.swing.JFrame {
         btRtD = new javax.swing.JButton();
         txRtS = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
-        txRtPpj = new javax.swing.JTextField();
+        TXJPrecio = new javax.swing.JTextField();
         jLabel51 = new javax.swing.JLabel();
-        txRtEst = new javax.swing.JTextField();
+        TXJEstado = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
         cbRtBus = new javax.swing.JComboBox<>();
@@ -343,18 +355,6 @@ public class Principal extends javax.swing.JFrame {
         jBhregresdar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jPMenu2 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jBagendar = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        JBM2Salir = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
         jPAgendar = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -394,6 +394,187 @@ public class Principal extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPMenu2.setBackground(new java.awt.Color(255, 255, 255));
+        jPMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
+        jPMenu2.setForeground(new java.awt.Color(255, 255, 255));
+        jPMenu2.setLayout(null);
+
+        jButton4.setBackground(new java.awt.Color(255, 99, 71));
+        jButton4.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 99, 71));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bus_icon-icons.com_76529.png"))); // NOI18N
+        jButton4.setText("BUS");
+        jButton4.setBorder(null);
+        jButton4.setBorderPainted(false);
+        jButton4.setContentAreaFilled(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton4);
+        jButton4.setBounds(430, 340, 169, 96);
+
+        jButton5.setBackground(new java.awt.Color(255, 99, 71));
+        jButton5.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 99, 71));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/map_route_10854.png"))); // NOI18N
+        jButton5.setText("RUTAS");
+        jButton5.setBorder(null);
+        jButton5.setBorderPainted(false);
+        jButton5.setContentAreaFilled(false);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton5);
+        jButton5.setBounds(760, 360, 145, 96);
+
+        jButton3.setBackground(new java.awt.Color(255, 99, 71));
+        jButton3.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 99, 71));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/customer_person_people_man_you_1625.png"))); // NOI18N
+        jButton3.setText("CLIENTE");
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton3);
+        jButton3.setBounds(70, 80, 220, 96);
+
+        jButton9.setBackground(new java.awt.Color(255, 99, 71));
+        jButton9.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 99, 71));
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Maintenance_96px.png"))); // NOI18N
+        jButton9.setText("ROL");
+        jButton9.setBorder(null);
+        jButton9.setBorderPainted(false);
+        jButton9.setContentAreaFilled(false);
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton9);
+        jButton9.setBounds(720, 220, 210, 110);
+
+        jBagendar.setBackground(new java.awt.Color(255, 99, 71));
+        jBagendar.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jBagendar.setForeground(new java.awt.Color(255, 99, 71));
+        jBagendar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Today_96px.png"))); // NOI18N
+        jBagendar.setText("RESERVACIONES");
+        jBagendar.setBorder(null);
+        jBagendar.setBorderPainted(false);
+        jBagendar.setContentAreaFilled(false);
+        jBagendar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jBagendarMouseMoved(evt);
+            }
+        });
+        jBagendar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jBagendarMouseExited(evt);
+            }
+        });
+        jBagendar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBagendarActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jBagendar);
+        jBagendar.setBounds(70, 200, 220, 96);
+
+        jButton6.setBackground(new java.awt.Color(255, 99, 71));
+        jButton6.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 99, 71));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Handshake_96px.png"))); // NOI18N
+        jButton6.setText("COOPERATIVA");
+        jButton6.setBorder(null);
+        jButton6.setBorderPainted(false);
+        jButton6.setContentAreaFilled(false);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton6);
+        jButton6.setBounds(420, 210, 200, 96);
+
+        JBM2Salir.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        JBM2Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Exit_41038.png"))); // NOI18N
+        JBM2Salir.setText("SALIR");
+        JBM2Salir.setBorderPainted(false);
+        JBM2Salir.setContentAreaFilled(false);
+        JBM2Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBM2SalirActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(JBM2Salir);
+        JBM2Salir.setBounds(20, 460, 106, 50);
+
+        jButton7.setBackground(new java.awt.Color(255, 99, 71));
+        jButton7.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 99, 71));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/airline-seat-recline-normal_119451.png"))); // NOI18N
+        jButton7.setText("ASIENTO");
+        jButton7.setBorder(null);
+        jButton7.setBorderPainted(false);
+        jButton7.setContentAreaFilled(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton7);
+        jButton7.setBounds(90, 330, 169, 96);
+
+        jButton10.setBackground(new java.awt.Color(255, 99, 71));
+        jButton10.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 99, 71));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin_person_user_man_2839.png"))); // NOI18N
+        jButton10.setText("USUARIO");
+        jButton10.setBorder(null);
+        jButton10.setBorderPainted(false);
+        jButton10.setContentAreaFilled(false);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton10);
+        jButton10.setBounds(430, 80, 161, 96);
+
+        jButton13.setBackground(new java.awt.Color(255, 99, 71));
+        jButton13.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(255, 99, 71));
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/_123049.png"))); // NOI18N
+        jButton13.setText("CIUDAD");
+        jButton13.setBorder(null);
+        jButton13.setBorderPainted(false);
+        jButton13.setContentAreaFilled(false);
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        jPMenu2.add(jButton13);
+        jButton13.setBounds(740, 80, 169, 96);
+
+        jLabel18.setBackground(new java.awt.Color(255, 99, 71));
+        jLabel18.setFont(new java.awt.Font("Cooper Black", 0, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 99, 71));
+        jLabel18.setText("MENU PRINCIPAL");
+        jPMenu2.add(jLabel18);
+        jLabel18.setBounds(430, 20, 150, 20);
+
+        getContentPane().add(jPMenu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1030, 520));
+
         jPBus.setBackground(new java.awt.Color(255, 255, 255));
         jPBus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
         jPBus.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -423,7 +604,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel71.setText("Placa");
         jPBus.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, -1, -1));
-        jPBus.add(txBusPla, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 80, -1));
+        jPBus.add(JTBPlaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 80, -1));
         jPBus.add(txBusId, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 25, -1));
 
         btBusG.setText("Guardar");
@@ -433,11 +614,11 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPBus.add(btBusG, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, -1));
-        jPBus.add(txBusAño, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 73, -1));
+        jPBus.add(JTBMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 73, -1));
 
         jLabel72.setText("Año");
         jPBus.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, -1, -1));
-        jPBus.add(txBusMar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 74, -1));
+        jPBus.add(JTBAño, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 74, -1));
 
         jLabel73.setText("Marca");
         jPBus.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, -1, -1));
@@ -684,7 +865,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel76.setText("Cedula");
         jPUsuario.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, -1, -1));
-        jPUsuario.add(txUsCed1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 100, -1));
+        jPUsuario.add(JTUCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 100, -1));
         jPUsuario.add(txUsId1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 20, -1));
 
         btUsG1.setText("Guardar");
@@ -700,24 +881,24 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel78.setText("Apellido");
         jPUsuario.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, -1));
-        jPUsuario.add(txUsNom1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 120, -1));
-        jPUsuario.add(txUsApe1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, 140, -1));
-        jPUsuario.add(txUsCor1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 140, 130, -1));
+        jPUsuario.add(JTUNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 120, -1));
+        jPUsuario.add(JTUApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 140, 140, -1));
+        jPUsuario.add(JTUCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 140, 130, -1));
 
         jLabel79.setText("Correo");
         jPUsuario.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 140, -1, -1));
 
         jLabel80.setText("Telefono");
         jPUsuario.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, -1, -1));
-        jPUsuario.add(txUsTel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 110, -1));
-        jPUsuario.add(txUsCon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 90, -1));
+        jPUsuario.add(JTUTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 140, 110, -1));
+        jPUsuario.add(JTUContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 90, -1));
 
         jLabel81.setText("Direccion");
         jPUsuario.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, -1, -1));
 
         jLabel82.setText("Contraseña");
         jPUsuario.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
-        jPUsuario.add(txUsDir1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 330, -1));
+        jPUsuario.add(JTUDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 330, -1));
 
         jLabel83.setText("Rol");
         jPUsuario.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 170, -1, -1));
@@ -797,7 +978,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel69.setText("Descripcion");
         jPRol.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, -1, -1));
-        jPRol.add(txRlDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 120, 169, -1));
+        jPRol.add(TXRDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 120, 169, -1));
         jPRol.add(txRlId, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 120, 30, -1));
 
         btRlG.setText("Guardar");
@@ -877,7 +1058,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel66.setText("Nombre");
         jPCiudad.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, -1, -1));
-        jPCiudad.add(txCiuNom, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 80, -1));
+        jPCiudad.add(JTCNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 80, -1));
         jPCiudad.add(txCiuID, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, 20, -1));
 
         btCiuG.setText("Guardar");
@@ -890,7 +1071,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel67.setText("Codigo Postal");
         jPCiudad.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, -1, -1));
-        jPCiudad.add(txCiuCodPos, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 60, -1));
+        jPCiudad.add(JTCCodPos, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, 60, -1));
 
         getContentPane().add(jPCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1030, 520));
 
@@ -923,7 +1104,13 @@ public class Principal extends javax.swing.JFrame {
 
         Numero.setText("Numero");
         jPAsiento.add(Numero, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, -1, -1));
-        jPAsiento.add(txAsNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, 90, -1));
+
+        JTANumero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JTANumeroActionPerformed(evt);
+            }
+        });
+        jPAsiento.add(JTANumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, 90, -1));
         jPAsiento.add(txAsId, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 20, -1));
 
         btAsG.setText("Guardar");
@@ -960,7 +1147,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel14.add(txAsS, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 12, 73, -1));
 
         jPAsiento.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 440, 160));
-        jPAsiento.add(txAsUbi, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 140, -1));
+        jPAsiento.add(JTAUbicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 140, -1));
 
         Ubicacion.setText("Ubicacion");
         jPAsiento.add(Ubicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, -1, -1));
@@ -1001,7 +1188,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel58.setText("Nombre");
         jPCooperativa.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, -1, -1));
-        jPCooperativa.add(txCopNom, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 130, -1));
+        jPCooperativa.add(TXCNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, 130, -1));
         jPCooperativa.add(txCopId, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 10, -1));
 
         btCopG.setText("Guardar");
@@ -1043,19 +1230,19 @@ public class Principal extends javax.swing.JFrame {
         jPanel10.add(txCopS, new org.netbeans.lib.awtextra.AbsoluteConstraints(677, 12, 73, -1));
 
         jPCooperativa.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 760, 210));
-        jPCooperativa.add(txCopRuc, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 130, -1));
+        jPCooperativa.add(TXCRuc, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 130, -1));
 
         jLabel59.setText("RUC");
         jPCooperativa.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, -1, -1));
-        jPCooperativa.add(txCopDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 420, -1));
+        jPCooperativa.add(TXCDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 420, -1));
 
         jLabel60.setText("Direccion");
         jPCooperativa.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
-        jPCooperativa.add(txCopTel, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 60, -1));
+        jPCooperativa.add(TXCTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 60, -1));
 
         jLabel61.setText("Telefono");
         jPCooperativa.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, -1, -1));
-        jPCooperativa.add(txCopCor, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 120, 160, -1));
+        jPCooperativa.add(TXCCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 120, 160, -1));
 
         jLabel62.setText("Correo");
         jPCooperativa.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, -1, -1));
@@ -1130,11 +1317,11 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel50.setText("Fecha y hora llegada");
         jPRuta.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, -1, -1));
-        jPRuta.add(txRtPpj, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 140, 100, -1));
+        jPRuta.add(TXJPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 140, 100, -1));
 
         jLabel51.setText("Precio Pasaje");
         jPRuta.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 140, -1, -1));
-        jPRuta.add(txRtEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 110, -1));
+        jPRuta.add(TXJEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 110, -1));
 
         jLabel52.setText("Estado");
         jPRuta.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
@@ -1142,7 +1329,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel53.setText("Bus");
         jPRuta.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
 
-        jPRuta.add(cbRtBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 160, -1));
+        jPRuta.add(cbRtBus, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 160, -1));
 
         jLabel54.setText("Usuario");
         jPRuta.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
@@ -1459,6 +1646,11 @@ public class Principal extends javax.swing.JFrame {
         jButton12.setBorderPainted(false);
         jButton12.setContentAreaFilled(false);
         jButton12.setDefaultCapable(false);
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         JPMRegistro.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, -1, -1));
 
         getContentPane().add(JPMRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1030, 520));
@@ -1541,187 +1733,6 @@ public class Principal extends javax.swing.JFrame {
         jPM1Horarios.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 390, 240));
 
         getContentPane().add(jPM1Horarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, 740, 520));
-
-        jPMenu2.setBackground(new java.awt.Color(255, 255, 255));
-        jPMenu2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
-        jPMenu2.setForeground(new java.awt.Color(255, 255, 255));
-        jPMenu2.setLayout(null);
-
-        jButton4.setBackground(new java.awt.Color(255, 99, 71));
-        jButton4.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 99, 71));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bus_icon-icons.com_76529.png"))); // NOI18N
-        jButton4.setText("BUS");
-        jButton4.setBorder(null);
-        jButton4.setBorderPainted(false);
-        jButton4.setContentAreaFilled(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton4);
-        jButton4.setBounds(430, 340, 169, 97);
-
-        jButton5.setBackground(new java.awt.Color(255, 99, 71));
-        jButton5.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 99, 71));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/map_route_10854.png"))); // NOI18N
-        jButton5.setText("RUTAS");
-        jButton5.setBorder(null);
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton5);
-        jButton5.setBounds(760, 360, 145, 97);
-
-        jButton3.setBackground(new java.awt.Color(255, 99, 71));
-        jButton3.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 99, 71));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/customer_person_people_man_you_1625.png"))); // NOI18N
-        jButton3.setText("CLIENTE");
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton3);
-        jButton3.setBounds(70, 80, 220, 97);
-
-        jButton9.setBackground(new java.awt.Color(255, 99, 71));
-        jButton9.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 99, 71));
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Maintenance_96px.png"))); // NOI18N
-        jButton9.setText("ROL");
-        jButton9.setBorder(null);
-        jButton9.setBorderPainted(false);
-        jButton9.setContentAreaFilled(false);
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton9);
-        jButton9.setBounds(720, 220, 210, 110);
-
-        jBagendar.setBackground(new java.awt.Color(255, 99, 71));
-        jBagendar.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jBagendar.setForeground(new java.awt.Color(255, 99, 71));
-        jBagendar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Today_96px.png"))); // NOI18N
-        jBagendar.setText("RESERVACIONES");
-        jBagendar.setBorder(null);
-        jBagendar.setBorderPainted(false);
-        jBagendar.setContentAreaFilled(false);
-        jBagendar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                jBagendarMouseMoved(evt);
-            }
-        });
-        jBagendar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jBagendarMouseExited(evt);
-            }
-        });
-        jBagendar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBagendarActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jBagendar);
-        jBagendar.setBounds(70, 200, 220, 97);
-
-        jButton6.setBackground(new java.awt.Color(255, 99, 71));
-        jButton6.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 99, 71));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_Handshake_96px.png"))); // NOI18N
-        jButton6.setText("COOPERATIVA");
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton6);
-        jButton6.setBounds(420, 210, 200, 97);
-
-        JBM2Salir.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        JBM2Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Exit_41038.png"))); // NOI18N
-        JBM2Salir.setText("SALIR");
-        JBM2Salir.setBorderPainted(false);
-        JBM2Salir.setContentAreaFilled(false);
-        JBM2Salir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBM2SalirActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(JBM2Salir);
-        JBM2Salir.setBounds(20, 460, 111, 50);
-
-        jButton7.setBackground(new java.awt.Color(255, 99, 71));
-        jButton7.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 99, 71));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/airline-seat-recline-normal_119451.png"))); // NOI18N
-        jButton7.setText("ASIENTO");
-        jButton7.setBorder(null);
-        jButton7.setBorderPainted(false);
-        jButton7.setContentAreaFilled(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton7);
-        jButton7.setBounds(90, 330, 169, 97);
-
-        jButton10.setBackground(new java.awt.Color(255, 99, 71));
-        jButton10.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 99, 71));
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/admin_person_user_man_2839.png"))); // NOI18N
-        jButton10.setText("USUARIO");
-        jButton10.setBorder(null);
-        jButton10.setBorderPainted(false);
-        jButton10.setContentAreaFilled(false);
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton10);
-        jButton10.setBounds(430, 80, 161, 97);
-
-        jButton13.setBackground(new java.awt.Color(255, 99, 71));
-        jButton13.setFont(new java.awt.Font("Cooper Black", 0, 12)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(255, 99, 71));
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/_123049.png"))); // NOI18N
-        jButton13.setText("CIUDAD");
-        jButton13.setBorder(null);
-        jButton13.setBorderPainted(false);
-        jButton13.setContentAreaFilled(false);
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
-        jPMenu2.add(jButton13);
-        jButton13.setBounds(740, 80, 169, 97);
-
-        jLabel18.setBackground(new java.awt.Color(255, 99, 71));
-        jLabel18.setFont(new java.awt.Font("Cooper Black", 0, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 99, 71));
-        jLabel18.setText("MENU PRINCIPAL");
-        jPMenu2.add(jLabel18);
-        jLabel18.setBounds(430, 20, 150, 20);
-
-        getContentPane().add(jPMenu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1030, 520));
 
         jPAgendar.setBackground(new java.awt.Color(255, 255, 255));
         jPAgendar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 51, 0), 4));
@@ -1818,7 +1829,7 @@ public class Principal extends javax.swing.JFrame {
                 btUsGActionPerformed(evt);
             }
         });
-        jPAgendar.add(btUsG, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 140, -1, -1));
+        jPAgendar.add(btUsG, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 140, -1, -1));
 
         jLabel25.setText("Nombre");
         jPAgendar.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, -1, -1));
@@ -2103,11 +2114,13 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jbSalirMouseClicked
 
     private void btRtGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRtGActionPerformed
-    
+        Controller control = new Controller();
+        control.registroRuta();
     }//GEN-LAST:event_btRtGActionPerformed
 
     private void btCopGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCopGActionPerformed
- 
+        Controller control = new Controller();
+        control.registroCooperativa();
     }//GEN-LAST:event_btCopGActionPerformed
 
     private void btCopDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCopDActionPerformed
@@ -2121,7 +2134,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btAsGActionPerformed
 
     private void btCiuGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCiuGActionPerformed
-  
+        Controller control = new Controller();
+        control.registroCiudad();
     }//GEN-LAST:event_btCiuGActionPerformed
 
     private void btRlUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlUActionPerformed
@@ -2133,7 +2147,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btRlDActionPerformed
 
     private void btRlGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlGActionPerformed
-     
+        Controller control = new Controller();
+        control.registroRol();
     }//GEN-LAST:event_btRlGActionPerformed
 
     private void btRlUPSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRlUPSActionPerformed
@@ -2141,7 +2156,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btRlUPSActionPerformed
 
     private void btBusGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBusGActionPerformed
-
+        Controller control = new Controller();
+        control.registroBus();
     }//GEN-LAST:event_btBusGActionPerformed
 
     private void btBusUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBusUActionPerformed
@@ -2161,8 +2177,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btRlUPS2ActionPerformed
 
     private void btUsG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btUsG1ActionPerformed
-
-
+        Controller control = new Controller();
+        control.registroUsuario();
     }//GEN-LAST:event_btUsG1ActionPerformed
 
     private void cbRol1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbRol1ActionPerformed
@@ -2170,13 +2186,22 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_cbRol1ActionPerformed
 
     private void btClGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btClGActionPerformed
-    
-
+        Controller control = new Controller();
+        control.registroCliente();
     }//GEN-LAST:event_btClGActionPerformed
 
     private void txClTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txClTelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txClTelActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        Controller control = new Controller();
+        control.registroCliente();
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void JTANumeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTANumeroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JTANumeroActionPerformed
 
     public static void main(String args[]) {
       
@@ -2218,16 +2243,38 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton JBM2Salir7;
     private javax.swing.JButton JBM2Salir8;
     private javax.swing.JButton JBRegSalir;
-    private javax.swing.JPanel JPMRegistro;
+    public static javax.swing.JPanel JPMRegistro;
+    public static javax.swing.JTextField JTANumero;
+    public static javax.swing.JTextField JTAUbicacion;
+    public static javax.swing.JTextField JTBAño;
+    public static javax.swing.JTextField JTBMarca;
+    public static javax.swing.JTextField JTBPlaca;
+    public static javax.swing.JTextField JTCCodPos;
+    public static javax.swing.JTextField JTCNombre;
     private javax.swing.JTable JTM1ruta;
-    private javax.swing.JTextField JTRApellido;
-    private javax.swing.JTextField JTRCedula;
-    private javax.swing.JTextField JTRContraseña;
-    private javax.swing.JTextField JTRCorreo;
-    private javax.swing.JTextField JTRDireccion;
-    private javax.swing.JTextField JTRNombre;
-    private javax.swing.JTextField JTRTelefono;
+    public static javax.swing.JTextField JTRApellido;
+    public static javax.swing.JTextField JTRCedula;
+    public static javax.swing.JTextField JTRContraseña;
+    public static javax.swing.JTextField JTRCorreo;
+    public static javax.swing.JTextField JTRDireccion;
+    public static javax.swing.JTextField JTRNombre;
+    public static javax.swing.JTextField JTRTelefono;
+    public static javax.swing.JTextField JTUApellido;
+    public static javax.swing.JTextField JTUCedula;
+    public static javax.swing.JTextField JTUContraseña;
+    public static javax.swing.JTextField JTUCorreo;
+    public static javax.swing.JTextField JTUDireccion;
+    public static javax.swing.JTextField JTUNombre;
+    public static javax.swing.JTextField JTUTelefono;
     private javax.swing.JLabel Numero;
+    public static javax.swing.JTextField TXCCorreo;
+    public static javax.swing.JTextField TXCDireccion;
+    public static javax.swing.JTextField TXCNombre;
+    public static javax.swing.JTextField TXCRuc;
+    public static javax.swing.JTextField TXCTelefono;
+    public static javax.swing.JTextField TXJEstado;
+    public static javax.swing.JTextField TXJPrecio;
+    public static javax.swing.JTextField TXRDescripcion;
     private javax.swing.JLabel Ubicacion;
     private javax.swing.JButton btAsD;
     private javax.swing.JButton btAsG;
@@ -2382,20 +2429,20 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLced;
     private javax.swing.JLabel jLnom;
     private javax.swing.JPanel jPAgendar;
-    private javax.swing.JPanel jPAsiento;
-    private javax.swing.JPanel jPBus;
-    private javax.swing.JPanel jPCiudad;
+    public static javax.swing.JPanel jPAsiento;
+    public static javax.swing.JPanel jPBus;
+    public static javax.swing.JPanel jPCiudad;
     private javax.swing.JPanel jPCliente;
-    private javax.swing.JPanel jPCooperativa;
-    private javax.swing.JPanel jPIngreso;
+    public static javax.swing.JPanel jPCooperativa;
+    public static javax.swing.JPanel jPIngreso;
     private javax.swing.JPanel jPM1Horarios;
     private javax.swing.JPanel jPM1Rutasprecio;
     private javax.swing.JPanel jPMenu1;
     private javax.swing.JPanel jPMenu2;
     private javax.swing.JPanel jPRol;
-    private javax.swing.JPanel jPRuta;
+    public static javax.swing.JPanel jPRuta;
     private javax.swing.JPanel jPSalir;
-    private javax.swing.JPanel jPUsuario;
+    public static javax.swing.JPanel jPUsuario;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel14;
@@ -2442,17 +2489,10 @@ public class Principal extends javax.swing.JFrame {
     public static javax.swing.JPasswordField jtxtPass;
     public static javax.swing.JTextField jtxtUser;
     private javax.swing.JTextField txAsId;
-    private javax.swing.JTextField txAsNum;
     private javax.swing.JTextField txAsS;
-    private javax.swing.JTextField txAsUbi;
-    private javax.swing.JTextField txBusAño;
     private javax.swing.JTextField txBusId;
-    private javax.swing.JTextField txBusMar;
-    private javax.swing.JTextField txBusPla;
     private javax.swing.JTextField txBusS;
-    private javax.swing.JTextField txCiuCodPos;
     private javax.swing.JTextField txCiuID;
-    private javax.swing.JTextField txCiuNom;
     private javax.swing.JTextField txCiuS;
     private javax.swing.JTextField txClApe;
     private javax.swing.JTextField txClCed;
@@ -2463,37 +2503,22 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField txClNom;
     private javax.swing.JTextField txClS;
     private javax.swing.JTextField txClTel;
-    private javax.swing.JTextField txCopCor;
-    private javax.swing.JTextField txCopDir;
     private javax.swing.JTextField txCopId;
-    private javax.swing.JTextField txCopNom;
-    private javax.swing.JTextField txCopRuc;
     private javax.swing.JTextField txCopS;
-    private javax.swing.JTextField txCopTel;
-    private javax.swing.JTextField txRlDescripcion;
     private javax.swing.JTextField txRlId;
     private javax.swing.JTextField txRlS;
-    private javax.swing.JTextField txRtEst;
     private javax.swing.JTextField txRtId;
-    private javax.swing.JTextField txRtPpj;
     private javax.swing.JTextField txRtS;
     private javax.swing.JTextField txUsApe;
-    private javax.swing.JTextField txUsApe1;
     private javax.swing.JTextField txUsCed;
-    private javax.swing.JTextField txUsCed1;
     private javax.swing.JTextField txUsCon;
-    private javax.swing.JTextField txUsCon1;
     private javax.swing.JTextField txUsCor;
-    private javax.swing.JTextField txUsCor1;
     private javax.swing.JTextField txUsDir;
-    private javax.swing.JTextField txUsDir1;
     private javax.swing.JTextField txUsId;
     private javax.swing.JTextField txUsId1;
     private javax.swing.JTextField txUsNom;
-    private javax.swing.JTextField txUsNom1;
     private javax.swing.JTextField txUsS;
     private javax.swing.JTextField txUsS1;
     private javax.swing.JTextField txUsTel;
-    private javax.swing.JTextField txUsTel1;
     // End of variables declaration//GEN-END:variables
 }
